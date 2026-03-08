@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 52" fill="none">
+  <defs>
+    <linearGradient id="sg" x1="0" y1="0" x2="48" y2="52">
+      <stop offset="0%" stop-color="#6c5ce7"/>
+      <stop offset="100%" stop-color="#00cec9"/>
+    </linearGradient>
+    <linearGradient id="sg2" x1="0" y1="0" x2="48" y2="52">
+      <stop offset="0%" stop-color="#00cec9"/>
+      <stop offset="100%" stop-color="#6c5ce7"/>
+    </linearGradient>
+    <linearGradient id="fill" x1="0" y1="0" x2="48" y2="52">
+      <stop offset="0%" stop-color="#6c5ce7" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00cec9" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <!-- Shield body -->
+  <path d="M24 2L4 12v14c0 12 8.5 23 20 26 11.5-3 20-14 20-26V12L24 2z" fill="url(#fill)" stroke="url(#sg)" stroke-width="2.2"/>
+  <!-- Inner highlight line -->
+  <path d="M24 6L8 14.5v11c0 10 7 19 16 21.5 9-2.5 16-11.5 16-21.5v-11L24 6z" fill="none" stroke="url(#sg)" stroke-width="0.5" opacity="0.3"/>
+  <!-- AI Brain symbol - simplified -->
+  <g>
+    <!-- Central brain circle -->
+    <circle cx="24" cy="22" r="4.5" fill="none" stroke="url(#sg2)" stroke-width="2"/>
+    <!-- AI text inside -->
+    <text x="24" y="25" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="7" font-weight="800" fill="url(#sg2)">AI</text>
+    <!-- Circuit lines radiating out -->
+    <line x1="24" y1="17.5" x2="24" y2="12" stroke="url(#sg2)" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="24" cy="11" r="1.8" fill="url(#sg2)"/>
+    <line x1="19.8" y1="20" x2="14" y2="17" stroke="url(#sg2)" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="13" cy="16.5" r="1.8" fill="url(#sg2)"/>
+    <line x1="28.2" y1="20" x2="34" y2="17" stroke="url(#sg2)" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="35" cy="16.5" r="1.8" fill="url(#sg2)"/>
+    <line x1="19.8" y1="24" x2="14" y2="27" stroke="url(#sg2)" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="13" cy="27.5" r="1.8" fill="url(#sg2)"/>
+    <line x1="28.2" y1="24" x2="34" y2="27" stroke="url(#sg2)" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="35" cy="27.5" r="1.8" fill="url(#sg2)"/>
+    <!-- Lock icon below -->
+    <rect x="20" y="31" width="8" height="7" rx="2" fill="none" stroke="url(#sg2)" stroke-width="1.8"/>
+    <path d="M22 31v-2.5a2 2 0 014 0V31" fill="none" stroke="url(#sg2)" stroke-width="1.8" stroke-linecap="round"/>
+    <circle cx="24" cy="34.5" r="1.2" fill="url(#sg2)"/>
+  </g>
+</svg>

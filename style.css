@@ -1,5 +1,5 @@
 /* ============================================
-   AI-Powered Cybersecurity Mastery — Styles
+   Mastering AI & Cybersecurity — Styles
    ============================================ */
 
 :root {
@@ -80,25 +80,43 @@ body {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     text-decoration: none;
-    font-size: 1.4rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
 }
 
-.logo-icon {
-    font-size: 1.6rem;
+.logo-emblem {
+    width: 42px;
+    height: 42px;
+    filter: drop-shadow(0 0 8px rgba(108, 92, 231, 0.4));
+    transition: filter 0.3s, transform 0.3s;
+}
+
+.logo:hover .logo-emblem {
+    filter: drop-shadow(0 0 14px rgba(0, 206, 201, 0.5));
+    transform: scale(1.05);
 }
 
 .logo-text {
-    color: var(--text-primary);
+    color: rgba(255, 255, 255, 0.9);
+    font-family: 'Inter', sans-serif;
 }
 
-.logo-dot {
-    background: var(--gradient-1);
+.logo-highlight {
+    background: linear-gradient(135deg, #00cec9, #6c5ce7);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+}
+
+.logo-dot {
+    background: linear-gradient(135deg, #6c5ce7, #fd79a8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
 }
 
 .nav-links {
@@ -500,6 +518,59 @@ body {
 .audience-card span {
     font-weight: 500;
     font-size: 0.95rem;
+}
+
+/* ---- Course Details ---- */
+.details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.detail-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 24px 28px;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: all 0.3s;
+}
+
+.detail-card:hover {
+    border-color: var(--border-hover);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.detail-icon {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.detail-info h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--text-muted);
+    margin-bottom: 4px;
+    font-weight: 600;
+}
+
+.detail-info p {
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.enrol-batch {
+    font-size: 1.2rem;
+    margin-bottom: 8px !important;
+}
+
+.enrol-batch strong {
+    color: var(--accent-2);
 }
 
 /* ---- Curriculum / Modules ---- */
