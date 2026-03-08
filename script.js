@@ -47,3 +47,4 @@ document.querySelectorAll('.module-card, .audience-card, .outcome-card, .about-c
     el.classList.add('fade-in');
     observer.observe(el);
 });
+

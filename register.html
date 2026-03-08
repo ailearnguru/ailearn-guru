@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | Mastering AI & Cybersecurity | ailearn.guru</title>
+    <meta name="description" content="Register for Mastering AI & Cybersecurity training. Batch starts April 27, 2026.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar scrolled" id="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo.svg" alt="ailearn.guru" class="logo-emblem">
+                <span class="logo-text">ai<span class="logo-highlight">learn</span><span class="logo-dot">.guru</span></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#details">Details</a></li>
+                <li><a href="index.html#curriculum">Curriculum</a></li>
+                <li><a href="index.html#audience">Who It's For</a></li>
+                <li><a href="index.html#outcomes">Outcomes</a></li>
+                <li><a href="#register-form" class="nav-cta">Register</a></li>
+            </ul>
+            <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Register Header -->
+    <section class="register-hero">
+        <div class="hero-bg">
+            <div class="grid-overlay"></div>
+            <div class="glow glow-1"></div>
+            <div class="glow glow-2"></div>
+        </div>
+        <div class="container register-header-content">
+            <a href="index.html" class="back-link">&larr; Back to Course</a>
+            <h1>Register for <span class="gradient-text">AI & Cybersecurity Mastery</span></h1>
+            <p class="register-subtitle">Batch Starts: <strong>April 27, 2026</strong> &mdash; Limited Seats Available</p>
+        </div>
+    </section>
+
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden_iframe" id="hiddenIframe" style="display:none;"></iframe>
+
+    <!-- Form Section -->
+    <section class="register-form-section" id="register-form">
+        <div class="container">
+            <div class="form-wrapper">
+                <form id="registrationForm" class="custom-form"
+                      action="https://docs.google.com/forms/d/e/1FAIpQLSevkVYMDVvRA7Wp5dpV1JGoyoRjPzLPxYaEgPsKETU49t8opw/formResponse"
+                      method="POST" target="hidden_iframe" novalidate>
+
+                    <div class="form-group">
+                        <label for="studentName">Name of the Student <span class="required">*</span></label>
+                        <input type="text" id="studentName" name="entry.554657075" required placeholder="Enter your full name" autocomplete="name">
+                        <span class="field-error">Please enter your name</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">G-mail ID <span class="required">*</span></label>
+                        <input type="email" id="email" name="entry.1460530204" required placeholder="yourname@gmail.com" autocomplete="email">
+                        <span class="field-error">Please enter a valid email address</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="mobile">Mobile Number <span class="required">*</span></label>
+                        <input type="tel" id="mobile" name="entry.283671736" required placeholder="+91 XXXXX XXXXX" autocomplete="tel">
+                        <span class="field-error">Please enter your mobile number</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="experience">Years of Experience in IT/Security? <span class="required">*</span></label>
+                        <select id="experience" name="entry.100367529" required>
+                            <option value="" disabled selected>Select your experience</option>
+                            <option value="0-1 years">0-1 years</option>
+                            <option value="1-3 years">1-3 years</option>
+                            <option value="3-5 years">3-5 years</option>
+                            <option value="5-10 years">5-10 years</option>
+                            <option value="10+ years">10+ years</option>
+                        </select>
+                        <span class="field-error">Please select your experience level</span>
+                    </div>
+                    <div class="form-group">
+                        <label for="source">How did you hear about this course? <span class="required">*</span></label>
+                        <select id="source" name="entry.209048306" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="WhatsApp">WhatsApp</option>
+                            <option value="Linkedin">LinkedIn</option>
+                            <option value="Friend">Friend</option>
+                            <option value="Social Media">Social Media</option>
+                            <option value="__other_option__">Other</option>
+                        </select>
+                        <span class="field-error">Please select an option</span>
+                    </div>
+                    <div class="form-group" id="otherSourceGroup" style="display: none;">
+                        <label for="otherSource">Please specify <span class="required">*</span></label>
+                        <input type="text" id="otherSource" name="entry.209048306.other_option_response" placeholder="How did you find us?">
+                        <span class="field-error">Please specify how you heard about us</span>
+                    </div>
+
+                    <!-- Hidden input for checkbox value sent to Google Forms -->
+                    <input type="hidden" id="termsHidden" name="entry.1216055466" value="I Agree">
+
+                    <div class="form-group form-group-checkbox">
+                        <label class="checkbox-label">
+                            <input type="checkbox" id="terms" required>
+                            <span class="checkbox-custom"></span>
+                            <span>I agree to the <a href="#" id="openTerms" class="terms-link">Terms & Conditions</a> <span class="required">*</span></span>
+                        </label>
+                        <span class="field-error">You must agree to the Terms & Conditions</span>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-large form-submit-btn" id="submitBtn">
+                        <span class="btn-text">Register Now</span>
+                        <span class="btn-loading" style="display: none;">
+                            <svg class="spinner" width="20" height="20" viewBox="0 0 20 20">
+                                <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="40" stroke-linecap="round"/>
+                            </svg>
+                            Submitting...
+                        </span>
+                    </button>
+                </form>
+
+                <!-- Success State -->
+                <div id="formSuccess" class="form-state form-success" style="display: none;">
+                    <div class="state-icon success-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="23" stroke="url(#successGrad)" stroke-width="2"/>
+                            <path d="M15 24L21 30L33 18" stroke="url(#successGrad)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <defs><linearGradient id="successGrad" x1="0" y1="0" x2="48" y2="48"><stop stop-color="#00cec9"/><stop offset="1" stop-color="#6c5ce7"/></linearGradient></defs>
+                        </svg>
+                    </div>
+                    <h3>Registration Successful!</h3>
+                    <p>Thank you for registering for <strong>Mastering AI & Cybersecurity</strong>. We'll contact you shortly with next steps.</p>
+                    <a href="index.html" class="btn btn-outline">Back to Course</a>
+                </div>
+
+                <!-- Error State -->
+                <div id="formError" class="form-state form-error" style="display: none;">
+                    <div class="state-icon error-icon">
+                        <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <circle cx="24" cy="24" r="23" stroke="#fd79a8" stroke-width="2"/>
+                            <path d="M24 16V28M24 32V33" stroke="#fd79a8" stroke-width="2.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <h3>Something went wrong</h3>
+                    <p>Please try again or contact us directly.</p>
+                    <button type="button" class="btn btn-outline" id="tryAgainBtn">Try Again</button>
+                </div>
+            </div>
+
+            <div class="register-contact">
+                <p>Need help registering? Call us:</p>
+                <div class="contact-methods">
+                    <a href="tel:+919390278722" class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+91 93902 78722</span>
+                    </a>
+                    <a href="tel:+919688274444" class="contact-item">
+                        <span class="contact-icon">📞</span>
+                        <span>+91 96882 74444</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Terms & Conditions Modal -->
+    <div class="modal-overlay" id="termsModal">
+        <div class="modal">
+            <div class="modal-header">
+                <h2>Terms & Conditions</h2>
+                <button class="modal-close" id="closeTerms" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <h3>Mastering AI & Cybersecurity: From Foundations to Pro</h3>
+                <p><strong>Effective Date:</strong> April 27, 2026</p>
+
+                <h4>1. Course Enrollment</h4>
+                <p>By registering for this course, you confirm that the information provided is accurate and complete. Enrollment is subject to seat availability and confirmation by the course team.</p>
+
+                <h4>2. Course Schedule & Delivery</h4>
+                <p>The course will be delivered as live online training sessions. The schedule, instructors, and delivery format are subject to change with prior notice. We will make reasonable efforts to notify enrolled participants of any changes.</p>
+
+                <h4>3. Fees & Payment</h4>
+                <p>Course fees, if applicable, will be communicated separately upon confirmation of your registration. Payment terms and deadlines will be shared via email or phone.</p>
+
+                <h4>4. Cancellation & Refund</h4>
+                <p>Cancellation requests must be made at least 7 days before the course start date for a full refund. Cancellations after this period may be subject to a cancellation fee. No refunds will be issued after the course has commenced.</p>
+
+                <h4>5. Intellectual Property</h4>
+                <p>All course materials, including presentations, documents, recordings, and resources, are the intellectual property of ailearn.guru. Participants may not copy, distribute, or share course materials without written permission.</p>
+
+                <h4>6. Code of Conduct</h4>
+                <p>Participants are expected to maintain professional conduct during all sessions. Any disruptive, abusive, or unethical behavior may result in removal from the course without refund.</p>
+
+                <h4>7. Certification</h4>
+                <p>A certificate of completion will be provided upon successfully completing the course requirements. The certificate is issued by ailearn.guru and does not constitute a professional license.</p>
+
+                <h4>8. Privacy</h4>
+                <p>Personal information collected during registration will be used solely for course administration and communication. We will not share your data with third parties without your consent, except as required by law.</p>
+
+                <h4>9. Limitation of Liability</h4>
+                <p>ailearn.guru provides this course on an "as-is" basis. We are not liable for any indirect, incidental, or consequential damages arising from your participation in the course.</p>
+
+                <h4>10. Contact</h4>
+                <p>For questions regarding these terms, contact us at:<br>
+                Phone: +91 93902 78722 | +91 96882 74444</p>
+
+                <div class="full-terms-link">
+                    <a href="https://docs.google.com/document/d/1GZWPmNJxt7KROT3m3xKXCX_6lVjoQeho/" target="_blank" rel="noopener noreferrer">Read Full Terms & Conditions &rarr;</a>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="acceptTerms">I Understand</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="logo.svg" alt="ailearn.guru" class="logo-emblem">
+                    <span class="logo-text">ai<span class="logo-highlight">learn</span><span class="logo-dot">.guru</span></span>
+                    <p>Mastering AI & Cybersecurity</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#curriculum">Curriculum</a>
+                    <a href="index.html#audience">Who It's For</a>
+                    <a href="index.html#outcomes">Outcomes</a>
+                    <a href="index.html#enrol">Enrol</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ailearn.guru — All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="form.js"></script>
+</body>
+</html>
