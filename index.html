@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mastering AI & Cybersecurity: From Foundations to Pro | ailearn.guru</title>
-    <meta name="description" content="Mastering AI & Cybersecurity — From Foundations to Pro. 9 Modules, 65+ Topics, 50 Hours Live Training. New Weekend Batch starts Saturday, May 30, 2026 — Sat & Sun, 8–11 AM IST.">
+    <meta name="description" content="Mastering AI & Cybersecurity — From Foundations to Pro. 8 Modules, 80+ Topics, 50 Hours Live Training. New Weekend Batch starts Saturday, May 30, 2026 — Sat & Sun, 8–11 AM IST.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -49,12 +49,12 @@
             <p class="hero-desc">Delivered by Industry-Certified Security Professionals</p>
             <div class="hero-stats">
                 <div class="stat">
-                    <span class="stat-number">9</span>
+                    <span class="stat-number">8</span>
                     <span class="stat-label">Modules</span>
                 </div>
                 <div class="stat-divider"></div>
                 <div class="stat">
-                    <span class="stat-number">65+</span>
+                    <span class="stat-number">80+</span>
                     <span class="stat-label">Topics</span>
                 </div>
                 <div class="stat-divider"></div>
@@ -209,26 +209,41 @@
         <div class="container">
             <div class="section-header">
                 <span class="section-tag">Complete Course Curriculum</span>
-                <h2>9 Modules of <span class="gradient-text">Intensive Training</span></h2>
+                <h2>8 Modules of <span class="gradient-text">Intensive Training</span></h2>
             </div>
 
             <div class="modules-grid">
+                <!-- Orientation -->
+                <div class="module-card module-card-aside" data-module="00">
+                    <div class="module-header">
+                        <span class="module-number">00</span>
+                        <h3>Orientation &amp; Lab Setup</h3>
+                        <span class="module-badge module-badge-aside">Pre-Course</span>
+                    </div>
+                    <ul class="module-topics">
+                        <li>Install and verify course software; connect to the course lab</li>
+                        <li>Set up Google Colab, Hugging Face, and GitHub accounts</li>
+                    </ul>
+                </div>
+
                 <!-- Module 01 -->
                 <div class="module-card" data-module="01">
                     <div class="module-header">
                         <span class="module-number">01</span>
-                        <h3>AI Landscape — Foundations</h3>
+                        <h3>AI &amp; LLM Foundations</h3>
                     </div>
                     <ul class="module-topics">
-                        <li>Human Intelligence vs. Artificial Intelligence</li>
-                        <li>Machine Learning (ML) & Supervised / Unsupervised Learning</li>
-                        <li>Neural Networks & Deep Learning Concepts</li>
-                        <li>Generative AI — Labs: Text, Image & Music Generation</li>
-                        <li>Agentic AI & AI Agents — Architecture & Use Cases</li>
-                        <li>Retrieval-Augmented Generation (RAG)</li>
-                        <li>Model Context Protocol (MCP) — Introduction</li>
-                        <li>Running LLMs Locally — Ollama, LM Studio & llama.cpp Setup</li>
-                        <li>Choosing the Right LLM — Parameters, Quantisation & Hardware Requirements</li>
+                        <li>AI landscape: ML (supervised / unsupervised), neural networks, deep learning, generative &amp; agentic AI</li>
+                        <li>Model infrastructure: CPU vs GPU, VRAM, parameters, quantisation; where to run (laptop, Colab, HF Spaces, Vast.ai) and cost traps</li>
+                        <li><span class="topic-handson">Hands-on</span>Run your first model with Ollama</li>
+                        <li>ML for security: decision trees &amp; Random Forest; intrusion detection on CIC-IDS2017</li>
+                        <li>Metrics: confusion matrix, precision/recall, false positives; small neural network for packet classification; when ML beats an LLM</li>
+                        <li><span class="topic-handson">Hands-on</span>IDS notebook</li>
+                        <li>LLM internals: tokens &amp; tokenisation (BPE, WordPiece), embeddings, attention, next-token prediction</li>
+                        <li>Sampling (temperature, top-k, top-p); context window and overflow strategies</li>
+                        <li>Training lifecycle: dataset curation, pre-training, fine-tuning, RLHF</li>
+                        <li>Current LLM/SLM families; choosing a model for your hardware</li>
+                        <li><span class="topic-handson">Hands-on</span>Tokeniser, embedding visualiser &amp; sampling experiments in LM Studio</li>
                     </ul>
                 </div>
 
@@ -236,18 +251,17 @@
                 <div class="module-card" data-module="02">
                     <div class="module-header">
                         <span class="module-number">02</span>
-                        <h3>Building & Running LLM Models</h3>
+                        <h3>Running &amp; Building with LLMs</h3>
                     </div>
                     <ul class="module-topics">
-                        <li>What is a Large Language Model (LLM)?</li>
-                        <li>Dataset Curation & Preparation</li>
-                        <li>Tokenisation — BPE, WordPiece & Byte-Level</li>
-                        <li>Pre-Training, Fine-Tuning & RLHF</li>
-                        <li>Running LLMs on GPU vs. CPU — Performance Benchmarking</li>
-                        <li>Deploying LLMs via REST API — Ollama, vLLM & HuggingFace Inference</li>
-                        <li>Quantisation Formats — GGUF, GPTQ, AWQ Explained</li>
-                        <li>Building an Intrusion Detection System with LLMs</li>
-                        <li>Survey of Leading LLM & SLM Models (GPT-4, Gemini, Llama, Qwen, Mistral)</li>
+                        <li>Serving locally: Ollama in depth (CLI, Modelfile, system prompts, custom models, publishing), LM Studio, llama.cpp</li>
+                        <li>Model formats: GGUF, GPTQ, AWQ — what to download for which hardware</li>
+                        <li><span class="topic-handson">Hands-on</span>Build the "AppSec Guru" custom model</li>
+                        <li>LLM APIs: REST generate / chat, OpenAI-compatible APIs, vLLM, Python clients</li>
+                        <li>Front-ends: Streamlit, Open WebUI; exposing a model safely</li>
+                        <li><span class="topic-handson">Hands-on</span>Streamlit chat app on top of AppSec Guru</li>
+                        <li>Prompt engineering: anatomy (persona, task, context, format, tone, constraints); zero / one / few-shot; chain-of-thought; tree-of-thought; system vs user prompts</li>
+                        <li><span class="topic-handson">Hands-on</span>Write, compare &amp; refine prompts for security tasks with a local model</li>
                     </ul>
                 </div>
 
@@ -255,15 +269,18 @@
                 <div class="module-card" data-module="03">
                     <div class="module-header">
                         <span class="module-number">03</span>
-                        <h3>Prompt Engineering</h3>
+                        <h3>AI-Assisted Development &amp; Code Security</h3>
                     </div>
                     <ul class="module-topics">
-                        <li>Anatomy of a Prompt — Components & Best Practices</li>
-                        <li>System Prompts vs. User Prompts</li>
-                        <li>Few-Shot, Chain-of-Thought & Tree-of-Thought Prompting</li>
-                        <li>Function Calling & Tool Use in LLMs</li>
-                        <li>Running LLMs Interactively — CLI, Web UI (Open WebUI) & API Clients</li>
-                        <li>Guardrails — Input & Output Validation</li>
+                        <li>AI coding assistants: Cursor, GitHub Copilot, Continue with local models, Claude Code</li>
+                        <li>Building full applications with AI; secure prompts for code generation; shift-left; human-in-the-loop</li>
+                        <li><span class="topic-handson">Hands-on</span>Generate a banking app with AI</li>
+                        <li>Auditing AI-generated code: hard-coded secrets, XSS, SQL injection, root containers, vulnerable images &amp; dependencies</li>
+                        <li>Trivy, Semgrep &amp; Gitleaks with LLM triage; local vs cloud models for code review; agent Skills (Skills.md) for repeatable scans</li>
+                        <li><span class="topic-handson">Hands-on</span>Build &amp; Break — find and fix the flaws in the generated app</li>
+                        <li>AI in CI/CD: a GitHub Actions pipeline with AI-assisted security gates</li>
+                        <li>Reducing false positives; reporting; enterprise options</li>
+                        <li><span class="topic-handson">Hands-on</span>Skills-based scanner and a CI pipeline that fails on findings</li>
                     </ul>
                 </div>
 
@@ -271,14 +288,16 @@
                 <div class="module-card" data-module="04">
                     <div class="module-header">
                         <span class="module-number">04</span>
-                        <h3>Vibe Coding — AI-Assisted Development</h3>
+                        <h3>AI for Security</h3>
                     </div>
                     <ul class="module-topics">
-                        <li>Introduction to AI-Powered Code Generation</li>
-                        <li>Building Full Applications with AI Assistants</li>
-                        <li>Analysing & Auditing AI-Generated Code</li>
-                        <li>Writing Secure Prompts for Code Generation</li>
-                        <li>Live Lab: Build & Break an AI-Generated App</li>
+                        <li>Threat modelling: STRIDE with AI; architecture diagrams as code (Mermaid); generating security requirements</li>
+                        <li>Threat-modelling AI systems with MITRE ATLAS; where AI fits in the secure SDLC</li>
+                        <li><span class="topic-handson">Hands-on</span>Threat model a web application and an LLM application</li>
+                        <li>DAST with AI: test plans mapped to OWASP / CWE; agentic DAST (Strix, Claude Code); custom scripts &amp; skills; Burp + LLM; rules of engagement</li>
+                        <li><span class="topic-handson">Hands-on</span>AI-driven DAST against a vulnerable banking application</li>
+                        <li>Mobile application analysis with JADX / MobSF and an LLM</li>
+                        <li><span class="topic-handson">Hands-on</span>Analyse an APK with a local model</li>
                     </ul>
                 </div>
 
@@ -286,19 +305,15 @@
                 <div class="module-card" data-module="05">
                     <div class="module-header">
                         <span class="module-number">05</span>
-                        <h3>AI for Security</h3>
+                        <h3>AI Risks &amp; Governance</h3>
                     </div>
                     <ul class="module-topics">
-                        <li>Running Local LLMs for Offline Security Analysis (Air-Gapped Environments)</li>
-                        <li>Threat Modelling with AI</li>
-                        <li>Secrets Scanning — AI-Enhanced Detection</li>
-                        <li>SAST (Static Analysis) & SCA with AI</li>
-                        <li>DAST (Dynamic Analysis) — AI-Powered Fuzzing & Testing</li>
-                        <li>DevSecOps Integration — AI in CI/CD Pipelines</li>
-                        <li>Secure Application Development Lifecycle</li>
-                        <li>Cloud Security — AI Monitoring & Anomaly Detection</li>
-                        <li>Mobile Application Security with AI Tooling</li>
-                        <li>Security Operations Centre (SOC) — AI Automation & Triage</li>
+                        <li>Deepfakes: how they are made, detected, and used in fraud (ethics first)</li>
+                        <li>Shadow AI: risks, detection, and controls</li>
+                        <li><span class="topic-handson">Hands-on</span>Detect manipulated media; map Shadow AI in a sample organisation</li>
+                        <li>Model provenance; malicious model weights (pickle); safetensors; model scanning; AI-SBOM</li>
+                        <li>Regulation &amp; frameworks: EU AI Act, NIST AI RMF, ISO/IEC 42001</li>
+                        <li><span class="topic-handson">Hands-on</span>Scan and verify a downloaded model; build an AI-BOM</li>
                     </ul>
                 </div>
 
@@ -306,13 +321,24 @@
                 <div class="module-card" data-module="06">
                     <div class="module-header">
                         <span class="module-number">06</span>
-                        <h3>Risks with AI</h3>
+                        <h3>Attacking &amp; Defending LLM Applications</h3>
+                        <span class="module-badge">OWASP Top 10 for LLM 2025</span>
                     </div>
                     <ul class="module-topics">
-                        <li>Deepfakes — Detection, Creation & Countermeasures</li>
-                        <li>Shadow AI — Risks of Unauthorised AI Tool Usage</li>
-                        <li>AI Supply Chain Risks & Model Provenance</li>
-                        <li>Regulatory Landscape — EU AI Act, NIST AI RMF</li>
+                        <li>Prompt injection, jailbreaks &amp; system-prompt leakage (LLM01, LLM07): direct injection, DAN, many-shot, adversarial suffixes</li>
+                        <li>Injection vs jailbreak vs leakage — same payload, different target</li>
+                        <li>Defences: input validation, intent classification, prompt hardening</li>
+                        <li><span class="topic-handson">Hands-on</span>Guessing-game levels and the SecureBank chatbot</li>
+                        <li>Indirect injection &amp; improper output handling (LLM01, LLM05, LLM06): hidden payloads in documents, URLs &amp; retrieved content</li>
+                        <li>XSS, SQL, command &amp; Markdown injection through model output; excessive agency</li>
+                        <li><span class="topic-handson">Hands-on</span>Poisoned résumé attack on an HR portal; output-handling labs</li>
+                        <li>Data leakage &amp; guardrails (LLM02, LLM09): Microsoft Presidio, NeMo Guardrails rails, LlamaGuard</li>
+                        <li>Bias, fairness, misinformation, overreliance &amp; hallucination</li>
+                        <li><span class="topic-handson">Hands-on</span>Add guardrails to the SecureBank chatbot</li>
+                        <li>Model-level risks (LLM03, LLM04, LLM08, LLM10): unbounded consumption (Model DoS), rate limiting, model theft &amp; extraction</li>
+                        <li>Data and model poisoning; vector &amp; embedding weaknesses</li>
+                        <li>OWASP Top 10 for LLM 2025 — complete walkthrough and mapping exercise</li>
+                        <li><span class="topic-handson">Hands-on</span>Rate-limit gateway; extraction and poisoning demonstrations</li>
                     </ul>
                 </div>
 
@@ -320,26 +346,15 @@
                 <div class="module-card" data-module="07">
                     <div class="module-header">
                         <span class="module-number">07</span>
-                        <h3>AI Security — Attacking LLMs</h3>
-                        <span class="module-badge">OWASP Top 10 for LLMs</span>
+                        <h3>LLM Red-Teaming Tooling</h3>
                     </div>
                     <ul class="module-topics">
-                        <li>Prompt Injection — Direct & Indirect Attack Techniques</li>
-                        <li>Bias & Fairness Vulnerabilities</li>
-                        <li>Hallucination — Exploitation & Mitigation</li>
-                        <li>Jailbreaking Techniques (DAN, Many-Shot, Adversarial Suffixes)</li>
-                        <li>System Prompt Leakage & Exfiltration</li>
-                        <li>Insecure Output Handling</li>
-                        <li>Training Data Poisoning</li>
-                        <li>Model Denial of Service (DoS/Rate-Limit Abuse)</li>
-                        <li>Supply Chain Vulnerabilities & Malicious Model Weights</li>
-                        <li>AI Software Bill of Materials (AI-SBOM)</li>
-                        <li>Sensitive Information Disclosure</li>
-                        <li>Insecure Plugin / Tool Design</li>
-                        <li>Excessive Agency & Privilege</li>
-                        <li>Overreliance on AI Output</li>
-                        <li>Model Theft & Extraction Attacks</li>
-                        <li>OWASP Top 10 for LLMs — Full Walkthrough</li>
+                        <li>NVIDIA Garak: probes, detectors, reports &amp; risk levels; Prompt Security Fuzzer</li>
+                        <li>Testing a local model and reading the results</li>
+                        <li><span class="topic-handson">Hands-on</span>Scan a local model with both tools</li>
+                        <li>Promptfoo red-team: plugins, strategies &amp; reports</li>
+                        <li>Testing black-box AI apps: capturing the API with Burp; writing REST configurations; reporting; red-team checks in CI</li>
+                        <li><span class="topic-handson">Hands-on</span>Red-team SecureBank and write a short report</li>
                     </ul>
                 </div>
 
@@ -347,39 +362,31 @@
                 <div class="module-card" data-module="08">
                     <div class="module-header">
                         <span class="module-number">08</span>
-                        <h3>Agentic AI Security — Attacking AI Agents</h3>
+                        <h3>Agentic AI &amp; MCP Security</h3>
                     </div>
                     <ul class="module-topics">
-                        <li>AI Agent Architecture & Threat Surface</li>
-                        <li>Agentic AI — Goals, Memory & Tool Chains</li>
-                        <li>Hands-On Examples with Real Agent Frameworks</li>
-                        <li>Agent Goal Hijack Attacks</li>
-                        <li>Tool Misuse & Exploitation</li>
-                        <li>Memory & Context Poisoning</li>
-                        <li>Insecure Inter-Agent Communication</li>
-                        <li>Rogue Agent Scenarios & Kill-Switch Design</li>
-                        <li>OWASP Top 10 for Agentic AI</li>
+                        <li>Agent architecture: model, orchestrator, tools, memory; frameworks (n8n, CrewAI, LangGraph)</li>
+                        <li>OWASP Top 10 for Agentic Applications: goal hijacking, tool misuse, excessive agency, insecure plugin / tool design</li>
+                        <li><span class="topic-handson">Hands-on</span>Build and connect a banking agent</li>
+                        <li>Attacking agents: memory &amp; context poisoning; insecure inter-agent communication; rogue agents and kill-switch design</li>
+                        <li><span class="topic-handson">Hands-on</span>Pentest the banking agent; add a kill switch and tool restrictions</li>
+                        <li>MCP: architecture &amp; design patterns; building custom MCP tools; MCP in AppSec workflows</li>
+                        <li>Tool poisoning, context injection, secret exposure, scope creep, weak authentication / authorisation, shadow MCP servers</li>
+                        <li>Data masking &amp; DLP; AI Security Posture Management (AI-SPM); securing agentic workflows end-to-end</li>
+                        <li><span class="topic-handson">Hands-on</span>Build an MCP server, attack it, then harden it</li>
                     </ul>
                 </div>
 
-                <!-- Module 09 -->
-                <div class="module-card" data-module="09">
+                <!-- Capstone -->
+                <div class="module-card module-card-aside" data-module="C">
                     <div class="module-header">
-                        <span class="module-number">09</span>
-                        <h3>MCP Security & Securing AI Systems</h3>
+                        <span class="module-number">★</span>
+                        <h3>Capstone Project</h3>
+                        <span class="module-badge module-badge-aside">Final Session</span>
                     </div>
                     <ul class="module-topics">
-                        <li>MCP Introduction — Architecture & Design Patterns</li>
-                        <li>Building Custom MCP Tools (Hands-On Lab)</li>
-                        <li>MCP in Application Security Workflows</li>
-                        <li>MCP Vulnerabilities: Secret Exposure, Tool Poisoning, Context Injection</li>
-                        <li>Privilege Escalation via Scope Creep</li>
-                        <li>Shadow MCP Servers & Discovery</li>
-                        <li>Insufficient Authentication & Authorisation in MCP</li>
-                        <li>Guardrails — Implementing Input/Output Controls</li>
-                        <li>AI Security Posture Management (AI-SPM)</li>
-                        <li>Data Masking & DLP for AI Pipelines</li>
-                        <li>Securing Agentic Workflows End-to-End</li>
+                        <li>Teams threat-model, red-team, and harden an AI application end-to-end</li>
+                        <li>Present findings and fixes to the cohort</li>
                     </ul>
                 </div>
             </div>
